@@ -20,7 +20,7 @@
 
 использую Vite для сборки
 
-git clone //
+git clone https://github.com/tpampampam/wb
 cd wild
 npm install
 
