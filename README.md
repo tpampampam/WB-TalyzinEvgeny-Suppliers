@@ -20,9 +20,9 @@
 
 использую Vite для сборки
 
-git clone https://github.com/tpampampam/wb
-cd wild
-npm install
+- git clone https://github.com/tpampampam/wb
+- cd wild
+- npm install
 
 
 ## Запуск приложения:
