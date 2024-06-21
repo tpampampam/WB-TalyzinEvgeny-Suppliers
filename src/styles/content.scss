@@ -1,0 +1,23 @@
+.content {
+    background-color: $bg;
+    padding: 24px;
+    width: 1274px;
+    height: 912px;
+    max-width: 1394px;
+    @media only screen and (max-width: 768px){
+
+    }
+
+    @media only screen and (max-width: 375px){
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.pages{
+   @include flex-center;
+    color: $primary-color;
+}
+
+

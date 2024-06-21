@@ -1,0 +1,100 @@
+.calendar {
+    &__wrapper {
+        border-radius: 8px;
+        padding: 16px 16px 20px 16px;
+        width: 262px;
+        height: 265px;
+        background: $primary-color;
+        box-shadow: 0 20px 20px 0 $dark, inset 0 0 0 1px $light;
+        overflow: hidden;
+        @media only screen and (max-width: 577px){
+          width: 298px;
+          height: 269px;
+        }
+        @media only screen and (max-width: 375px){
+          width: 100%;
+        }
+    }
+    &__header {
+        width: 100%;
+        height: 24px;
+        @include flex-center-sb;
+        &-title {
+            font-weight: 560;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: $black;
+        }
+        &-arrow {
+            cursor: pointer;
+        }
+    }
+    &__body {
+        margin-top: 8px;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        height: 253px;
+        overflow: hidden;
+        &-names {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            font-size: 13x;
+            color:$black;
+
+            &-active {
+                color:  #f96666;
+            }
+        }
+        &-days {
+
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-auto-rows: 1fr;
+            width: 100%;
+        }
+
+        &-placeholder {
+          position: absolute;
+          left: 17px;
+          bottom: 8px;
+          &-disabled {
+              display: none;
+          }
+      }
+    }
+
+}
+.col {
+  padding: 0.5rem;
+}
+
+.cell {
+  border: 0.8px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 440;
+  font-size: 16px;
+}
+
+.cell.disabled {
+  background-color: #f9f9f9;
+  color: #d1cfd7;
+  border: none;
+}
+
+.cell.selected {
+  background-color:  #e4eaff;
+}
+.cell:hover{
+  transform: scale(1.1);
+  border:none;
+  z-index: 10;
+}
+.cell.disabled:hover{
+    transform: none;
+}
+.number {
+  display: inline-block;
+  font-size: 1.2rem;
+}

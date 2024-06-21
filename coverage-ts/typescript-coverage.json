@@ -1,0 +1,238 @@
+{
+  "fileCounts": {
+    "src/pages/Prices.tsx": {
+      "correctCount": 6,
+      "totalCount": 6
+    },
+    "src/pages/Analitics.tsx": {
+      "correctCount": 6,
+      "totalCount": 6
+    },
+    "src/pages/Advertising.tsx": {
+      "correctCount": 6,
+      "totalCount": 6
+    },
+    "src/utils/constants.ts": {
+      "correctCount": 114,
+      "totalCount": 114
+    },
+    "src/components/Modal/ModalButton.tsx": {
+      "correctCount": 19,
+      "totalCount": 19
+    },
+    "src/redux/api/apiSlice.ts": {
+      "correctCount": 112,
+      "totalCount": 112
+    },
+    "src/components/Modal/CloseButton.tsx": {
+      "correctCount": 17,
+      "totalCount": 17
+    },
+    "src/components/Modal/ModalTitle.tsx": {
+      "correctCount": 19,
+      "totalCount": 19
+    },
+    "src/components/Calendar/CalendarHeader.tsx": {
+      "correctCount": 56,
+      "totalCount": 56
+    },
+    "src/components/Calendar/NameDays.tsx": {
+      "correctCount": 20,
+      "totalCount": 20
+    },
+    "src/components/Calendar/Days.tsx": {
+      "correctCount": 91,
+      "totalCount": 91
+    },
+    "src/components/Calendar/Calendar.tsx": {
+      "correctCount": 66,
+      "totalCount": 66
+    },
+    "src/components/Modal/DropCalendar.tsx": {
+      "correctCount": 42,
+      "totalCount": 42
+    },
+    "src/hooks/useDevice.tsx": {
+      "correctCount": 19,
+      "totalCount": 19
+    },
+    "src/components/Modal/DropDown.tsx": {
+      "correctCount": 126,
+      "totalCount": 126
+    },
+    "src/components/Modal/ModalItem.tsx": {
+      "correctCount": 68,
+      "totalCount": 76
+    },
+    "src/components/Modal/ModalAdd.tsx": {
+      "correctCount": 232,
+      "totalCount": 232
+    },
+    "src/utils/common.ts": {
+      "correctCount": 5,
+      "totalCount": 5
+    },
+    "src/components/SuppliersHeader.tsx": {
+      "correctCount": 64,
+      "totalCount": 64
+    },
+    "src/components/Table/Table.tsx": {
+      "correctCount": 15,
+      "totalCount": 15
+    },
+    "src/components/Pagination.tsx": {
+      "correctCount": 50,
+      "totalCount": 50
+    },
+    "src/hooks/useDebounce.tsx": {
+      "correctCount": 20,
+      "totalCount": 20
+    },
+    "src/components/SelectList.tsx": {
+      "correctCount": 89,
+      "totalCount": 89
+    },
+    "src/components/Search.tsx": {
+      "correctCount": 32,
+      "totalCount": 32
+    },
+    "src/components/Modal/ModalUpdate.tsx": {
+      "correctCount": 218,
+      "totalCount": 218
+    },
+    "src/components/Mobile/CardMobile.tsx": {
+      "correctCount": 71,
+      "totalCount": 71
+    },
+    "src/components/Mobile/TableMobile.tsx": {
+      "correctCount": 22,
+      "totalCount": 22
+    },
+    "src/components/Table/TableHead.tsx": {
+      "correctCount": 28,
+      "totalCount": 28
+    },
+    "src/components/Table/Card.tsx": {
+      "correctCount": 128,
+      "totalCount": 128
+    },
+    "src/pages/Suppliers.tsx": {
+      "correctCount": 93,
+      "totalCount": 93
+    },
+    "src/pages/Goods.tsx": {
+      "correctCount": 8,
+      "totalCount": 8
+    },
+    "src/routes/AppRouter.tsx": {
+      "correctCount": 31,
+      "totalCount": 31
+    },
+    "src/components/Logo.tsx": {
+      "correctCount": 11,
+      "totalCount": 11
+    },
+    "src/components/Mobile/Hamburger.tsx": {
+      "correctCount": 10,
+      "totalCount": 10
+    },
+    "src/components/Mobile/HeaderIcons.tsx": {
+      "correctCount": 27,
+      "totalCount": 27
+    },
+    "src/components/Navigation.tsx": {
+      "correctCount": 24,
+      "totalCount": 24
+    },
+    "src/components/Mobile/HeaderMobile.tsx": {
+      "correctCount": 38,
+      "totalCount": 38
+    },
+    "src/components/Header.tsx": {
+      "correctCount": 18,
+      "totalCount": 18
+    },
+    "src/components/Content.tsx": {
+      "correctCount": 9,
+      "totalCount": 9
+    },
+    "src/App.tsx": {
+      "correctCount": 12,
+      "totalCount": 12
+    },
+    "src/redux/store/store.ts": {
+      "correctCount": 33,
+      "totalCount": 33
+    },
+    "src/main.tsx": {
+      "correctCount": 18,
+      "totalCount": 18
+    },
+    "src/vite-env.d.ts": {
+      "correctCount": 0,
+      "totalCount": 0
+    }
+  },
+  "anys": [
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 9,
+      "character": 4,
+      "text": "selectedOption",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 11,
+      "character": 4,
+      "text": "value",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 12,
+      "character": 4,
+      "text": "onSelect",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 13,
+      "character": 4,
+      "text": "onChange",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 21,
+      "character": 4,
+      "text": "selectedOption",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 23,
+      "character": 4,
+      "text": "onSelect",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 24,
+      "character": 4,
+      "text": "value",
+      "kind": 1
+    },
+    {
+      "file": "src/components/Modal/ModalItem.tsx",
+      "line": 25,
+      "character": 4,
+      "text": "onChange",
+      "kind": 1
+    }
+  ],
+  "percentage": 99.61922893860067,
+  "total": 2101,
+  "covered": 2093,
+  "uncovered": 8
+}

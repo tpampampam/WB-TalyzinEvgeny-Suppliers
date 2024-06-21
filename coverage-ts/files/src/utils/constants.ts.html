@@ -1,0 +1,149 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>constants.ts</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="positive"><td class="">src/utils/constants.ts</td><td class="">100.00%</td><td class="">80%</td><td class="">114</td><td class="">114</td><td class="">0</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">type MenuItem = {
+    name:string
+    link: string
+} 
+
+export interface Change {
+    value: number
+    label: string
+}
+
+export interface Option extends Change{
+    type: string
+}
+
+export const BASE_URL: string = &#x27;http://localhost:8000&#x27;
+
+export const MENU: MenuItem[] = [
+    {
+        name: &quot;Поставки&quot;,
+        link: &#x27;&#x27;
+    },
+    {
+        name: &quot;Товары&quot;,
+        link: &#x27;goods&#x27;
+    },
+    {
+        name: &quot;Цены и скидки&quot;,
+        link: &#x27;prices&#x27;
+    },
+    {
+        name: &quot;Аналитика&quot;,
+        link: &#x27;analitics&#x27;
+    },
+    {
+        name: &quot;Реклама&quot;,
+        link: &#x27;adv&#x27;
+    }
+]
+
+export const OPTIONS: Option[] = [
+    { value: 1, label: &#x27;По номеру&#x27;, type: &#x27;number&#x27;},
+    { value: 2, label: &#x27;По городу&#x27;, type: &#x27;city&#x27;},
+    { value: 3, label: &#x27;По типу поставки&#x27;, type: &#x27;type&#x27;},
+    { value: 4, label: &#x27;По статусу&#x27;, type: &#x27;status&#x27;},
+]
+
+export const CHANGE: Change[] = [
+    { value: 1, label: &#x27;Редактировать&#x27; },
+    { value: 2, label: &#x27;Отменить поставку&#x27; },
+]
+
+
+export const DATA: Record&lt;string, Change[]&gt; = {
+    city: [
+      { value: 1, label: &quot;Москва&quot; },
+      { value: 2, label: &quot;Псков&quot; },
+      { value: 3, label: &quot;Абакан&quot; },
+      { value: 4, label: &quot;Нижний Новгород&quot; },
+      { value: 5, label: &quot;Кострома&quot; },
+      { value: 6, label: &quot;Ярославль&quot; },
+    ],
+    type: [
+      { value: 1, label: &quot;Короб&quot; },
+      { value: 2, label: &quot;Монопаллета&quot; }
+    ],
+    warehouse: [
+      { value: 1, label: &quot;Склад&quot; },
+      { value: 2, label: &quot;СЦ Абакан&quot; },
+      { value: 3, label: &quot;Черная грязь&quot; },
+      { value: 4, label: &quot;Внуково&quot; },
+      { value: 5, label: &quot;Белая Дача&quot; },
+      { value: 6, label: &quot;Электросталь&quot; },
+      { value: 7, label: &quot;Вёшки&quot; },
+    ],
+    status: [
+      { value: 1, label: &quot;В пути&quot; },
+      { value: 2, label: &quot;Задерживается&quot; },
+    ],
+  };
+
+export type Warehouses = {
+    [key: number]: string
+}
+
+export const WAREHOUSES: Warehouses = {
+    1: &quot;д.Черная грязь, ул.Промышленная, с.2&quot;,
+    2: &quot;Яничкин проезд, 3&quot;,
+    3: &quot;Ногинский р-н, Московская обл., г. Электросталь ввыывормилриодт&quot;,
+    4: &quot;Поселение Марушкинское, квартал №8&quot;,
+    5: &quot;Невская ул.13&quot;,
+    6:  &quot;ул. Индустриальная, д.9/1&quot;,
+    7: &quot;ул.Игарская, д.21Г&quot;,
+    8: &quot;ул. ЛенинаБ д.16&quot;,
+    9: &quot;г.Кострома, ул.Центральная д.7&quot;,
+    10:&quot;Ногинский р-н, Московская обл., г. Электросталь ввыывормилриодт&quot;
+}
+
+
+export type Cities = &#x27;Москва&#x27;|&#x27;Псков&#x27;|&#x27;Ярославль&#x27;|&#x27;Нижний Новгород&#x27;|&#x27;Абакан&#x27;|&#x27;Кострома&#x27;
+
+export type CityWarehouses = {
+    [key in Cities]: Change[];
+}
+
+
+export const CITY_WAREHOUSES: CityWarehouses = {
+    &quot;Москва&quot; : [
+        {value: 1, label: &#x27;Черная грязь&#x27;},
+        {value: 2, label: &quot;Белая Дача&quot;},
+        {value: 3, label: &quot;Электросталь&quot;},
+        {value: 4, label: &quot;Внуково&quot;},
+        {value: 5, label: &quot;Вёшки&quot;}
+    ],
+    &quot;Псков&quot; : [
+        {value: 6, label: &#x27;Склад&#x27;}
+    ],
+    &quot;Абакан&quot; : [
+        {value: 7, label: &#x27;СЦ Абакан&#x27;}
+    ],
+    &quot;Нижний Новгород&quot; : [
+        {value: 8, label: &#x27;Склад&#x27;}
+    ],
+    &quot;Кострома&quot; : [
+        {value: 9, label: &#x27;Склад&#x27;}
+    ],
+    &quot;Ярославль&quot; : [
+        {value: 10, label: &#x27;Склад&#x27;}
+    ]
+}
+
+
+</textarea><pre id="annotations" style="display:none">[]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Thu, 20 Jun 2024 14:29:19 GMT</p>
+    </body>
+  </html>
+  

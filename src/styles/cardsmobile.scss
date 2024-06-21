@@ -1,0 +1,53 @@
+
+
+.cardmobile{
+    &__wrapper {
+        @include flex-center-sb;
+        background-color: $dark-grey;
+        margin: 0 calc((100% - 343px) / 2);
+        margin-bottom: 4px;
+        border-radius: 14px;
+        padding: 4px;
+        width: 343px;
+        height: 98px;
+    }
+    &__subtitle {
+        font-weight: 560;
+        font-size: 13px;
+        color: $light-grey;
+        padding-bottom: 6px;;
+    }
+    &__number {
+        font-weight: 400;
+        font-size: 16px;
+        color: $primary-color;
+    }
+    &__left {
+        @include flex-col-sb;
+        padding-left: 4px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            height: 59px;
+        }
+    }
+    &__date {
+        color: $primary-color;
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 185px;
+        padding: 6px;
+        &-date {
+            display: flex;
+            flex-direction: column;
+
+        }
+        &-pencil {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>ModalItem.tsx</title>
+      <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" type="text/css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/mode/javascript/javascript.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.2/codemirror.min.css" type="text/css" rel="stylesheet">
+<script src="../../../../assets/source-file.js" type="text/javascript" charset="utf-8"></script>
+<link href="../../../../assets/source-file.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+    <div style="margin-top:3em" class="ui container"><h1 class="ui header"><a href="../../../../index.html">TypeScript coverage report</a></h1><table style="margin-top:2em" class="ui celled table"><thead class=""><tr class=""><th class="">Filename</th><th class="">Percent</th><th class="">Threshold</th><th class="">Total</th><th class="">Covered</th><th class="">Uncovered</th></tr></thead><tbody class=""><tr class="positive"><td class="">src/components/Modal/ModalItem.tsx</td><td class="">89.47%</td><td class="">80%</td><td class="">76</td><td class="">68</td><td class="">8</td></tr></tbody></table><textarea id="editor" readonly="" style="margin-top:3em">import { FC } from &quot;react&quot;
+import DropCalendar from &quot;./DropCalendar&quot;
+import DropDown from &quot;./DropDown&quot;
+import { Change } from &quot;../../utils/constants&quot;
+
+interface ModalItemProps {
+    title: string
+    type: &#x27;drop&#x27; | &#x27;calendar&#x27; | &#x27;input&#x27;
+    label?: string
+    selectedOption?: any
+    options?: Change[]
+    value?: any
+    onSelect?: any
+    onChange?: any
+}
+
+
+const ModalItem: FC&lt;ModalItemProps&gt; = ({
+    type, 
+    title, 
+    label,  
+    selectedOption,
+    options, 
+    onSelect, 
+    value, 
+    onChange
+}) =&gt; {
+    
+    const element = (type === &#x27;drop&#x27;) 
+    ?  (
+            &lt;div className=&#x27;modal__content-dropdown&#x27;&gt;
+                &lt;DropDown
+                    title={title}
+                    label={label!}
+                    options={options!}
+                    selectedOption={selectedOption}
+                    onSelect={onSelect}
+                /&gt;
+            &lt;/div&gt;
+        ) 
+    : (type === &#x27;calendar&#x27;)
+    ? (
+        &lt;div className=&#x27;modal__content-dropdown&#x27;&gt;
+            &lt;DropCalendar
+                selectedOption={selectedOption}
+                onSelect={onSelect}
+            /&gt;
+        &lt;/div&gt;
+    ) 
+    : (
+        &lt;div className=&#x27;modal__content-input&#x27;&gt;
+            &lt;input 
+                type=&quot;number&quot;
+                name=&quot;quantity&quot;
+                value={value} 
+                onChange={onChange}
+            /&gt;
+            &lt;span&gt;шт.&lt;/span&gt;
+        &lt;/div&gt;
+    )
+
+
+    return (
+        &lt;div className=&#x27;modal__content-item&#x27;&gt;
+            &lt;div className=&#x27;modal__content-title&#x27;&gt;
+                &lt;span&gt;{title}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className=&#x27;modal__content-dropdown&#x27;&gt;
+                {element}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    )
+}
+export default ModalItem;</textarea><pre id="annotations" style="display:none">[{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:9,&quot;character&quot;:4,&quot;text&quot;:&quot;selectedOption&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:11,&quot;character&quot;:4,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:12,&quot;character&quot;:4,&quot;text&quot;:&quot;onSelect&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:13,&quot;character&quot;:4,&quot;text&quot;:&quot;onChange&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:21,&quot;character&quot;:4,&quot;text&quot;:&quot;selectedOption&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:23,&quot;character&quot;:4,&quot;text&quot;:&quot;onSelect&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:24,&quot;character&quot;:4,&quot;text&quot;:&quot;value&quot;,&quot;kind&quot;:1},{&quot;file&quot;:&quot;src/components/Modal/ModalItem.tsx&quot;,&quot;line&quot;:25,&quot;character&quot;:4,&quot;text&quot;:&quot;onChange&quot;,&quot;kind&quot;:1}]</pre></div>
+    <p class="footer-text">TypeScript Coverage Report generated by <a href="https://github.com/plantain-00/type-coverage">type-coverage</a> and <a href="https://github.com/alexcanessa/typescript-coverage-report">typescript-coverage-report</a> at Thu, 20 Jun 2024 14:29:19 GMT</p>
+    </body>
+  </html>
+  

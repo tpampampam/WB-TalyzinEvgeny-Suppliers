@@ -1,0 +1,40 @@
+
+.sidebar{
+    width: 92px;
+    height: 100vh;
+    @media only screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.logo{
+    width: 100%;
+    padding: 12px;
+    @include flex-center;
+    @media only screen and (max-width: 1200px){
+        padding: 0;
+    }
+    @media only screen and (max-width: 768px){
+        width: 35px;
+        height: 20px;
+    }
+
+    @media only screen and (max-width: 375px) {
+        width: 43px;
+        height: 24px;
+    }
+    
+    &_img{
+        width: 68px;
+        height: 68px;
+        @media only screen and (max-width: 1200px) {
+            width: 43px;
+            height: 24px;
+        }
+        @media only screen and (max-width: 375px) {
+            width: 43px;
+            height: 24px;
+        }
+    }
+}
+    
